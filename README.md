@@ -38,7 +38,7 @@ example.key & example.crt > example.pem
 on windows machine install git, netcore and vscode, in the vscode install the c# extension  
 ```sh
 dotnet new console -o nameofproject
-cd nameofproject
+cd <nameofproject>
 code . (allowing to open the progam.cs in vscode directly)
 ```   
 --> in this part we will make a copy of the code in the UrbanBishopLocal folder which named program.cs --> it's template to make the obfuscation of our payload (just copy our base64 code at the end progam.cs), but also we specified the same key which we are defined in the msfvenom part.
