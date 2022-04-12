@@ -41,7 +41,10 @@ dotnet new console -o <nameofproject>
 cd <nameofproject>
 code . (allowing to open the progam.cs in vscode directly)
 ```   
---> in this part we will make a copy of the code in the UrbanBishopLocal folder which named program.cs --> it's template to make the obfuscation of our payload (just copy our base64 code at the end progam.cs), but also we specified the same key which we are defined in the msfvenom part.
+--> in this part we will make a copy of the code in the UrbanBishopLocal folder which named program.cs --> it's template to make the obfuscation of our payload (just copy our base64 code at the end progam.cs), but also we specified the same key which we are defined in the msfvenom part.  
+![image](https://user-images.githubusercontent.com/88449481/162997528-3483d787-4104-4ff4-b5b5-f0b256f523bb.png)  
+![image](https://user-images.githubusercontent.com/88449481/162997827-685cb1b2-8350-4cc8-bdaf-79deadbf74a6.png)
+
 #### don't forget the c# extension  
 
 ```sh
