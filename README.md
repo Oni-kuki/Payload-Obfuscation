@@ -37,7 +37,7 @@ example.key & example.crt > example.pem
 - https://github.com/slyd0g/UrbanBishopLocal  
 on windows machine install git, netcore and vscode, in the vscode install the c# extension  
 ```sh
-dotnet new console -o nameofproject
+dotnet new console -o <nameofproject>
 cd <nameofproject>
 code . (allowing to open the progam.cs in vscode directly)
 ```   
