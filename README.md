@@ -50,6 +50,10 @@ code . (allowing to open the progam.cs in vscode directly)
 ```sh
 dotnet build
 ```  
+But if you want the compilation in one file only you can run that:
+```sh
+dotnet publish -r win-x64 -c Release /p:PublishSingleFile=true
+```  
 ### Metasploit
 
 ```sh
